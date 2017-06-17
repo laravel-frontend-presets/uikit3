@@ -7,13 +7,15 @@ Adds a preset for UIKit 3 scaffolding on new Laravel 5.5+ projects, will add ind
 
 ## Usage
 
-1- Install via composer `composer require owenmelbz/uikit3-preset`
+1- Install via composer `composer require owenmelbz/uikit3-preset`.
 
-2- The package should use laravels new auto discovery, if not however you can manually register the service provider - typically done inside the `app.php` providers array e.g `OwenMelbz\UIKit3Preset\UIKit3PresetServiceProvider::class`
+2- The package should use laravels new auto discovery, if not however you can manually register the service provider - typically done inside the `app.php` providers array e.g `OwenMelbz\UIKit3Preset\UIKit3PresetServiceProvider::class`.
 
-3- Run `php artisan preset uikit3`
+3- Run `php artisan preset uikit3` this will generate the js and scss needed.
 
-4- *Optional* You can then run something like the vuejs or react presets also
+4- *Optional* If you need `make:auth` to use uikit, run `php artisan preset uikit3-auth` to generate the templates.
+
+5- *Optional* You can then run something like the vuejs or react presets as well.
 
 ## Warning
 
