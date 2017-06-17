@@ -11,6 +11,10 @@ Adds a preset for UIKit 3 scaffolding on new Laravel 5.5+ projects, will add ind
 
 2- The package should use laravels new auto discovery, if not however you can manually register the service provider - typically done inside the `app.php` providers array e.g `OwenMelbz\UIKit3Preset\UIKit3PresetServiceProvider::class`
 
+3- Run `php artisan preset uikit3`
+
+4- *Optional* You can then run something like the vuejs or react presets also
+
 ## Warning
 
 This replaces the default laravel auth scaffolding, so if you want to revert to bootstrap, you'll need to run `artisan make:auth` again to overwrite it.

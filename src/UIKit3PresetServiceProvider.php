@@ -15,10 +15,9 @@ class UIKit3PresetServiceProvider extends ServiceProvider
     public function boot()
     {
         PresetCommand::macro('uikit3', function ($command) {
-            UIKit3Preset::install();
-
             $command->info('UIKit3 scaffolding installed successfully.');
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+            UIKit3Preset::install();
         });
     }
 }
