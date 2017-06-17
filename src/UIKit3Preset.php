@@ -14,13 +14,17 @@ class UIKit3Preset extends Preset
      *
      * @return void
      */
-    public static function install()
+    public static function install($withAuth = false)
     {
         static::removeOtherFrameworks();
         static::updatePackages();
         static::updateWebpackConfiguration();
         static::updateBootstrapping();
         static::removeNodeModules();
+
+        if ($withAuth) {
+            static::addAuthTemplates();
+        }
     }
 
     /**
@@ -78,6 +82,18 @@ class UIKit3Preset extends Preset
             );
 
             $filesystem->put(resource_path('assets/js/bootstrap.js'), $bootstrapJs);
+        });
+    }
+
+    /**
+     * Copies in UIKit auth templates
+     *
+     * @return void
+     */
+    public static function addAuthTemplates()
+    {
+        tap(new Filesystem, function ($filesystem) {
+            $filesystem->copyDirectory(__DIR__.'/stubs/views', resource_path('views'));
         });
     }
 }
