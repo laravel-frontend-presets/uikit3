@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "OwenMelbz\\UIKit3Preset\\": "src/"
+            "LaravelFrontendPresets\\UIKit3Preset\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "OwenMelbz\\UIKit3Preset\\UIKit3PresetServiceProvider"
+                "LaravelFrontendPresets\\UIKit3Preset\\UIKit3PresetServiceProvider"
             ]
         }
     }

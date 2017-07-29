@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenMelbz\UIKit3Preset;
+namespace LaravelFrontendPresets\UIKit3Preset;
 
 use Artisan;
 use Illuminate\Support\Arr;

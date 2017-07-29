@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenMelbz\UIKit3Preset;
+namespace LaravelFrontendPresets\UIKit3Preset;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;
