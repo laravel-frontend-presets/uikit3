@@ -14,17 +14,13 @@ class UIKit3Preset extends Preset
      *
      * @return void
      */
-    public static function install($withAuth = false)
+    public static function install()
     {
         static::removeOtherFrameworks();
         static::updatePackages();
         static::updateWebpackConfiguration();
         static::updateBootstrapping();
         static::removeNodeModules();
-
-        if ($withAuth) {
-            static::addAuthTemplates();
-        }
     }
 
     /**
