@@ -1,5 +1,5 @@
 {
-    "name": "owenmelbz/uikit3-preset",
+    "name": "laravel-frontend-presets/uikit3-preset",
     "description": "Laravel 5.5.X Front-end preset for UIKit 3.",
     "keywords": ["laravel", "preset", "uikit3"],
     "license": "MIT",
