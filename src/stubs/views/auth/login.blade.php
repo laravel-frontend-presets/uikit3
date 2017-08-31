@@ -10,7 +10,7 @@
 
                     <h2>Login</h2>
 
-                    <form class="uk-form-stacked" role="form" method="POST" = action="{{ route('login') }}">
+                    <form class="uk-form-stacked" role="form" method="POST" action="{{ route('login') }}">
 
                         {{ csrf_field() }}
 
