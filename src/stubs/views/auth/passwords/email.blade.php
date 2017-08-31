@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    <form class="uk-form-stacked" role="form" method="POST" = action="{{ route('password.email') }}">
+                    <form class="uk-form-stacked" role="form" method="POST" action="{{ route('password.email') }}">
 
                         {{ csrf_field() }}
 
