@@ -10,7 +10,7 @@
 
                     <h2>Register</h2>
 
-                    <form class="uk-form-stacked" role="form" method="POST" = action="{{ route('register') }}">
+                    <form class="uk-form-stacked" role="form" method="POST" action="{{ route('register') }}">
 
                         {{ csrf_field() }}
 
