@@ -43,7 +43,7 @@ class UIKit3Preset extends Preset
      */
     protected static function updatePackageArray(array $packages)
     {
-        return ['uikit' => '^3.0.0-beta.27', 'jquery' => '^3.1.1' ] + Arr::except($packages, [
+        return ['uikit' => '^3.0.0-beta.30', 'jquery' => '^3.2.1' ] + Arr::except($packages, [
             'bootstrap-sass'
         ]);
     }
