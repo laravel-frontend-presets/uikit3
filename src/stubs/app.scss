@@ -16,8 +16,9 @@ $xlarge-min: 1220px;
 // UIkit 3
 
 // Base
-@import 'node_modules/uikit/src/scss/variables.scss';
-@import 'node_modules/uikit/src/scss/mixins.scss';
+@import 'node_modules/uikit/src/scss/variables-theme.scss';
+@import 'node_modules/uikit/src/scss/mixins-theme.scss';
+@import "node_modules/uikit/src/scss/theme/_import.scss";
 @import 'node_modules/uikit/src/scss/components/base.scss';
 @import 'node_modules/uikit/src/scss/components/inverse.scss';
 
