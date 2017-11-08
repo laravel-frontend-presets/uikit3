@@ -30,7 +30,7 @@ class UIKit3Preset extends Preset
      */
     protected static function removeOtherFrameworks()
     {
-        Artisan::call('preset',[
+        Artisan::call('preset', [
             'type' => 'none'
         ]);
     }
@@ -43,7 +43,7 @@ class UIKit3Preset extends Preset
      */
     protected static function updatePackageArray(array $packages)
     {
-        return ['uikit' => '^3.0.0-beta.30', 'jquery' => '^3.2.1' ] + Arr::except($packages, [
+        return ['uikit' => '^3.0.0-beta.34'] + Arr::except($packages, [
             'bootstrap-sass'
         ]);
     }
@@ -67,18 +67,7 @@ class UIKit3Preset extends Preset
     protected static function updateBootstrapping()
     {
         copy(__DIR__.'/stubs/app.scss', resource_path('assets/sass/app.scss'));
-
-        tap(new Filesystem, function ($filesystem) {
-            $filesystem->delete(resource_path('assets/sass/_variables.scss'));
-
-            $bootstrapJs = str_replace(
-                "require('bootstrap-sass');",
-                "window.UIkit = require('uikit');",
-                $filesystem->get(resource_path('assets/js/bootstrap.js'))
-            );
-
-            $filesystem->put(resource_path('assets/js/bootstrap.js'), $bootstrapJs);
-        });
+        copy(__DIR__.'/stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
     }
 
     /**
