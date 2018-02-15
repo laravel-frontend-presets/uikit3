@@ -1,4 +1,4 @@
-# Laravel 5.5.X Front-end Preset for UIKit 3 Beta
+# Laravel 5.5+ Front-end Preset for UIKit 3 Beta
 
 Adds a preset for UIKit 3 scaffolding on new Laravel 5.5+ projects, will add individual SASS components and import the UIKit 3 core javascript.
 
